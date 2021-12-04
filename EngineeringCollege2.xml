@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE EngineeringCollege SYSTEM "college.dtd">
+
+<EngineeringCollege>
+    <Programofstudy>
+        <UGPROGRAMS ProgramID="UG">
+            It involves four years of course study and the students who have passed 12th standard will be taking this program.
+        </UGPROGRAMS>
+        
+        <PGPROGRAMS ProgramID="PG">
+            It involves two years of course study and the students who have completed UnderGraduation in some recognised organisation will be taking this program.
+        </PGPROGRAMS>
+    </Programofstudy>
+    
+    <Department Branch="CS" provides="UG PG">
+        All Computer Science teaching activities for both UG and PG programs and other research works are carried out here.
+    </Department>
+    
+    <Course courseID="CS6582" Credits="12">
+        <PGCourses courseID="CS6582"/>
+    </Course>
+    
+    <Course courseID="CS1100" Credits="12">
+        <UGCourses courseID="CS1100" />
+    </Course>
+    
+    <Course courseID="CS2200" Credits="12">
+        <UGCourses courseID="CS2200"/>
+    </Course>
+    
+    <Course courseID="CS5555" Credits="9">
+        <PGCourses courseID="CS5555"/>
+    </Course>
+    
+    <Person belongsto="CS">
+        <Student>
+            <UGStudent EnrolledIn="UG" StdID="CSB01" attends="CS6582 CS1100">
+                <attend>
+                    CS6582
+                </attend>
+                <attend>
+                    CS1100
+                </attend>
+                <Details>
+                    Name: Sai Ram
+                    Hostel: Cauvery
+                </Details>
+            </UGStudent>
+            
+            <UGStudent EnrolledIn="UG" StdID="CSB02" attends="CS5555 CS2200">
+                <attend>
+                    CS5555
+                </attend>
+                <attend>
+                    CS2200
+                </attend>
+                <Details>
+                    Name: Sai Krishna
+                    Hostel: Cauvery	
+                </Details>
+            </UGStudent>
+            
+            <UGStudent EnrolledIn="UG" StdID="CSB03" attends="CS1100 CS2200">
+                <attend>
+                    CS1100
+                </attend>
+                <attend>
+                    CS2200
+                </attend>
+                <Details>
+                    Name: Sai Arjun
+                    Hostel: Cauvery
+                </Details>
+            </UGStudent>
+            
+            <PGStudent EnrolledIn="PG" StdID="CSM01" attends="CS6582 CS5555" assists="CSET01">
+                <attend>
+                    CS6582
+                </attend>
+                <attend>
+                    CS5555
+                </attend>
+                <assists>
+                    CSET01
+                </assists>
+                <Details>
+                    Name: Sai Sampath
+                    Hostel: Brahmaputra
+                </Details>
+            </PGStudent>
+            
+            <PGStudent EnrolledIn="PG" StdID="CSM02" attends="CS6582 CS5555" assists="CSET02">
+                <attend>
+                    CS6582
+                </attend>
+                <attend>
+                    CS5555
+                </attend>
+                <assists>
+                    CSET02
+                </assists>
+                <Details>
+                    Name: Sai Vishnu
+                    Hostel: Brahmaputra
+                </Details>
+            </PGStudent>
+            
+            <PGStudent EnrolledIn="PG" StdID="CSM03" attends="CS6582" assists="CSET03">
+                <attend>
+                    CS6582
+                </attend>
+                <assists>
+                    CSET03
+                </assists>
+                <Details>
+                    Name: Sai Kumar
+                    Hostel: Brahmaputra
+                </Details>
+            </PGStudent>
+            
+        </Student>
+        <Staff>
+            <Teacher EmpID="CSET01" guides="CSM01 CSB01 CSM03" teaches="CS6582">
+                <teach>
+                    CS6582
+                </teach>
+                <guides>
+                    CSM01
+                </guides>
+                <guides>
+                    CSB01
+                </guides>
+                <guides>
+                    CSM03
+                </guides>
+                <Details>
+                    Name: Prof P. Sreenivasa Kumar
+                    Office: BSB 309
+                </Details>
+            </Teacher>
+            
+            <Teacher EmpID="CSET02" guides="CSM02 CSB02" teaches="CS5555 CS2200">
+                <teach>
+                    CS5555
+                </teach>
+                <teach>
+                    CS2200
+                </teach>
+                <guides>
+                    CSM02
+                </guides>
+                <guides>
+                    CSB02
+                </guides>
+                <Details>
+                    Name: Prof Deepak Khemani
+                    Office: BSB 306
+                </Details>
+            </Teacher>
+            
+            <Teacher EmpID="CSET03" guides="CSB03 " teaches="CS1100">
+                <teach>
+                    CS1100
+                </teach>
+                <guides>
+                    CSB03 
+                </guides>
+                <Details>
+                    Name: Prof V.Kamakoti
+                    Office: BSB 311
+                </Details>
+            </Teacher>
+            
+            <NonTeachingStaff EmpID="CSNT01">
+                Name: Ravichandran S
+                Office: DCF Lab
+            </NonTeachingStaff>
+        </Staff>
+    </Person>
+    
+    <Department Branch="EE" provides="UG PG">
+        All Electrical Enigneering  teaching activities for both UG and PG programs and other research works are carried out here.
+    </Department>
+    
+    <Course courseID="EE6582" Credits="12">
+        <PGCourses courseID="EE6582"/>
+    </Course>
+    
+    <Course courseID="EE1100" Credits="12">
+        <UGCourses courseID="EE1100" />
+    </Course>
+    
+    <Course courseID="EE2200" Credits="12">
+        <UGCourses courseID="EE2200"/>
+    </Course>
+    
+    <Course courseID="EE5555" Credits="9">
+        <PGCourses courseID="EE5555"/>
+    </Course>
+    
+    <Person belongsto="EE">
+        <Student>
+            <UGStudent EnrolledIn="UG" StdID="EEB01" attends="EE6582 EE1100">
+                <attend>
+                    EE6582
+                </attend>
+                <attend>
+                    EE1100
+                </attend>
+                <Details>
+                    Name: Sai Vidya
+                    Hostel: Tunga
+                </Details>
+            </UGStudent>
+            
+            <UGStudent EnrolledIn="UG" StdID="EEB02" attends="EE5555 EE2200">
+                <attend>
+                    EE5555
+                </attend>
+                <attend>
+                    EE2200
+                </attend>
+                <Details>
+                    Name: Sai Lakshmi
+                    Hostel: Vindhya
+                </Details>
+            </UGStudent>
+            
+            <UGStudent EnrolledIn="UG" StdID="EEB03" attends="EE1100 EE2200">
+                <attend>
+                    EE1100
+                </attend>
+                <attend>
+                    EE2200
+                </attend>
+                <Details>
+                    Name: Joseph
+                    Hostel: Krishna
+                </Details>
+            </UGStudent>
+            
+            <PGStudent EnrolledIn="PG" StdID="EEM01" attends="EE6582 EE5555" assists="EEET01">
+                <attend>
+                    EE6582
+                </attend>
+                <attend>
+                    EE5555
+                </attend>
+                <assists>
+                    EEET01
+                </assists>
+                <Details>
+                    Name: Asif Khan
+                    Hostel: Krishna
+                </Details>
+            </PGStudent>
+            
+            <PGStudent EnrolledIn="PG" StdID="EEM02" attends="EE6582 EE5555" assists="EEET02">
+                <attend>
+                    EE6582
+                </attend>
+                <attend>
+                    EE5555
+                </attend>
+                <assists>
+                    EEET02
+                </assists>
+                <Details>
+                    Name: Venkat
+                    Hostel: Cauvery
+                </Details>
+            </PGStudent>
+            
+            <PGStudent EnrolledIn="PG" StdID="EEM03" attends="EE6582" assists="EEET03">
+                <attend>
+                    EE6582
+                </attend>
+                <assists>
+                    EEET03
+                </assists>
+                <Details>
+                    Name: Vishwak
+                    Hostel: Brahmaputra
+                </Details>
+            </PGStudent>
+            
+        </Student>
+        
+        <Staff>
+            <Teacher EmpID="EEET01" guides="EEM01 EEB01 EEM03" teaches="EE6582">
+                <teach>
+                    EE6582
+                </teach>
+                <guides>
+                    EEM01
+                </guides>
+                <guides>
+                    EEB01
+                </guides>
+                <guides>
+                    EEM03
+                </guides>
+                <Details>
+                    Name: Prof Ananth Krishnan
+                    Office: CSD 301
+                </Details>
+            </Teacher>
+            
+            <Teacher EmpID="EEET02" guides="EEM02 EEB02" teaches="EE5555 EE2200">
+                <teach>
+                    EE5555
+                </teach>
+                <teach>
+                    EE2200
+                </teach>
+                <guides>
+                    EEM02
+                </guides>
+                <guides>
+                    EEB02
+                </guides>
+                <Details>
+                    Name: Prof Deleep R Nair
+                    Office: CSD 318
+                </Details>
+            </Teacher>
+            
+            <Teacher EmpID="EEET03" guides="EEB03 " teaches="EE1100">
+                <teach>
+                    EE1100
+                </teach>
+                <guides>
+                    EEB03
+                </guides>
+                <Details>
+                    Name: Prof Kaushik Mitra
+                    Office: CSD 303
+                </Details>
+            </Teacher>
+            
+            <NonTeachingStaff EmpID="EENT01">
+                Name: Amutha G
+                Office: MEMS Lab
+            </NonTeachingStaff>
+        </Staff>
+    </Person>
+    
+</EngineeringCollege>
